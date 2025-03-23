@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Button++LA_Metro",
+  "version": "1.0",
+  "description": "Adds a custom buttons Reject All for LA Metro",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://beta.console.hayden.ai/matches*"],
+  "background": {
+    "matches": ["https://beta.console.hayden.ai/matches*"],
+    "service_worker": "background.js"
+  }
+}
