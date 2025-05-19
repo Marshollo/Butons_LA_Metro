@@ -4,9 +4,13 @@
   "version": "1.0",
   "description": "Adds a custom buttons Reject All for LA Metro",
   "permissions": ["scripting", "activeTab"],
-  "host_permissions": ["https://beta.console.hayden.ai/matches*"],
+  "host_permissions": [
+  "https://beta.console.hayden.ai/matches*",
+  "https://beta.console.hayden.ai/groupsReview*"],
   "background": {
-    "matches": ["https://beta.console.hayden.ai/matches*"],
+    "matches": [
+  "https://beta.console.hayden.ai/matches*",
+  "https://beta.console.hayden.ai/groupsReview*"],
     "service_worker": "background.js"
   }
 }
