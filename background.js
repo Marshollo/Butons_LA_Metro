@@ -1,5 +1,9 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  if (changeInfo.status === 'complete' && tab.url.startsWith('https://beta.console.hayden.ai/matches')) {
+  if (
+    changeInfo.status === 'complete' &&
+    (tab.url.startsWith('https://beta.console.hayden.ai/matches') ||
+     tab.url.startsWith('https://beta.console.hayden.ai/groupsReview'))
+  ) {
     chrome.scripting.executeScript({
       target: { tabId },
       func: initializeButtons,
